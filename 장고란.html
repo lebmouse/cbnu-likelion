@@ -9,10 +9,22 @@
       background-color: rgb(255, 255, 255);
     }
     .post_content{
-      width: 800px;
+      width: 780px;
       margin:auto;
-      padding: 20px;
+      padding: 40px;
       background-color: rgb(226, 226, 226);
+    }
+    h2{
+      margin-bottom: 0px;
+    }
+    p{
+      margin-top : 0px;
+    }
+    /* 폰트 변경 찾아보기 */
+    .image{
+      text-align: center;
+      color:rgb(170, 170, 170);
+      font-size:8px;
     }
     </style>
   </head>
@@ -22,16 +34,14 @@
         <h1>
           [Djnago 기초] 1장. Python Django란?
         </h1>
-        <div>
+        <div class="profile">
           <img src="https://cdn-images-1.medium.com/fit/c/50/50/1*u6fvNrsjjhmIoFp7s3Os8g.jpeg" />
           프시케 Jan 3, 2018
         </div>
-        <p>
+        <p class="image">
           <img src="https://cdn-images-1.medium.com/max/800/1*MrV3XHs6z0pavU9Ci4ENHA.jpeg" alt="" />
           <br />
-          <span>
             Python Django
-          </span>
         </p>
 
         <p class="summary">
@@ -66,8 +76,10 @@
           그렇다면 이제 프레임워크에서 웹을 프레임워크에서 어떻게 개발을 할까요? 그러면, 웹은 어떤식으로 작동을 하게
           될까요? 프레임워크에서 어떻게 개발을 해나가야 되는지는 앞으로 계속 포스팅을 할 예정입다. 웹이 어떻게
           작동하는지에 대해서만 조금 이야기를 하겠습니다.
-          <img src="https://cdn-images-1.medium.com/max/800/1*F1Paay8DBZGNQpi4SApv_g.png" alt="" />
-          Client-Server Model
+          <div class="image">
+            <img src="https://cdn-images-1.medium.com/max/800/1*F1Paay8DBZGNQpi4SApv_g.png" alt="" />
+            Client-Server Model
+          </div>
           <br />
           웹 사용자(Client)는 웹 브라우저(Web Browser, 예. Chrome, Internet Explorer, FireFox 등)를 보면서 여러가지
           행동들을 하게됩니다. 예를 들면 검색을 하는 일이요. 사용자의 모든 행동들은 웹 브라우저를 통해 서버(Server)로
