@@ -1,0 +1,154 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>과제1</title>
+    <style>
+      body {
+        background-color: rgb(202, 202, 202);
+      }
+      /* css - 1 */
+      #div_span {
+        background-color: #927235;
+      }
+      #div_span p {
+        background: rgb(141, 73, 73);
+      }
+      #div_span div {
+        background: rgb(134, 37, 37);
+      }
+      #div_span span {
+        background-color: rgb(231, 41, 41);
+      }
+      /* css - 2 */
+      #color {
+        background-color: blueviolet;
+      }
+      #color .name {
+        border: 5px solid blue;
+        background-color: yellowgreen;
+      }
+      #color .birth {
+        border: 5px solid firebrick;
+        background-color: wheat;
+      }
+      /* css - 3 */
+      #margin {
+        background-color: rgb(139, 0, 120);
+      }
+      #margin div {
+        margin: 20px;
+        box-sizing: border-box;
+        border: 2px solid green;
+      }
+      /* css - 4 */
+      #padding {
+        background-color: rgb(129, 104, 126);
+      }
+      #padding div {
+        padding: 20px;
+        box-sizing: border-box;
+        border: 2px solid green;
+      }
+      /* css - 5 */
+      #layout {
+        background-color: rgb(236, 154, 227);
+        margin: 20px auto;
+        display: grid;
+      }
+      #layout div {
+        box-sizing: border-box;
+        border: 2px solid green;
+      }
+      #layout div:nth-child(1) {
+        width: 30%;
+        height: 80px;
+      }
+      #layout div:nth-child(2) {
+        width: 60%;
+        height: 40px;
+      }
+      #layout div:nth-child(3) {
+        width: 90%;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      html - 1
+      h1, p태그를 사용해서 마크업 해보기
+     -->
+    <div id="tag">
+      <h1>h1입니다.</h1>
+      <h2>h2입니다.</h2>
+      <h3>h3입니다.</h3>
+      <h4>h4입니다.</h4>
+      <p>p태그입니다.</p>
+    </div>
+    <!-- 
+      html - 2, css - 1
+      p, div와 span 차이 파악하기
+      상속으로 css 작성해보기
+      background 배경해봐서 태그의 영역을 확인해보기
+    -->
+    <div id="div_span">
+      <p>p1</p>
+      <p>p1</p>
+      <div>div1</div>
+      <div>div2</div>
+      <span>span1</span>
+      <span>span2</span>
+    </div>
+
+    <!--
+      css - 2
+      background 변경해보기
+      border 속성 사용해 보기
+      위의 두 태그의 영역을 확인해 보기
+    -->
+    <div id="color">
+      <div class="name">
+        <span>이름</span>
+        <span>권영권</span>
+      </div>
+      <div class="major">
+        <span>학과</span>
+        <span>농업경제학과</span>
+      </div>
+      <div class="birth">
+        <span>생년월일</span>
+        <span>1993.10.15</span>
+      </div>
+    </div>
+    <!-- 
+      css - 3
+      margin 이용해보기
+    -->
+    <div id="margin">
+      <div>div1</div>
+      <div>div2</div>
+      <div>div3</div>
+    </div>
+    <!--
+      css - 4
+      padding 이용해보기
+     -->
+    <div id="padding">
+      <div>div1</div>
+      <div>div2</div>
+      <div>div3</div>
+    </div>
+    <!-- 
+      css - 5 
+      width, height 사용해서
+      크기 조절 해보기
+     -->
+    <div id="layout">
+      <div>div1</div>
+      <div>div2</div>
+      <div>div3</div>
+    </div>
+  </body>
+</html>

@@ -18,13 +18,34 @@
       margin-bottom: 0px;
     }
     p{
-      margin-top : 0px;
+      margin-top : 5px;
+    }
+    .profile img{
+      border-radius: 100%;
     }
     /* 폰트 변경 찾아보기 */
     .image{
       text-align: center;
       color:rgb(170, 170, 170);
       font-size:8px;
+    }
+
+    .summary{
+      /* background-color: aqua; */
+      font-style:italic;
+      border-left: 5px solid black;
+      box-sizing: border-box;
+      padding: 10px;
+    }
+    .summary span{
+      font-weight: bold;
+    }
+    .list{
+      padding-left: 30px;
+      /* padding: 30px;  */
+    }
+    li{
+      margin : 20px auto;
     }
     </style>
   </head>
@@ -35,8 +56,9 @@
           [Djnago 기초] 1장. Python Django란?
         </h1>
         <div class="profile">
-          <img src="https://cdn-images-1.medium.com/fit/c/50/50/1*u6fvNrsjjhmIoFp7s3Os8g.jpeg" />
-          프시케 Jan 3, 2018
+            <img src="https://cdn-images-1.medium.com/fit/c/50/50/1*u6fvNrsjjhmIoFp7s3Os8g.jpeg" />
+            프시케 
+            Jan 3, 2018
         </div>
         <p class="image">
           <img src="https://cdn-images-1.medium.com/max/800/1*MrV3XHs6z0pavU9Ci4ENHA.jpeg" alt="" />
@@ -87,8 +109,11 @@
           서버(Server)는 사용자가 보낸 편지에 답장을 해줘야겠죠? 이것을 응답(Response)라고 합니다. 서버는 응답을
           브라우저를 통해 보여주게 되고, 그렇게 되면 사용자는 그 브라우저를 통해 자신이 요청한 사항에 대하여 적절한
           응답을 보게 되겠죠!
-          <br />
-          저희는 앞으로 그 웹 브라우저에 보이는 웹 페이지 또는 웹 애플리케이션을 제작해보도록 할 것입니다.
+
+          <br/>
+          <p>
+            저희는 앞으로 그 웹 브라우저에 보이는 웹 페이지 또는 웹 애플리케이션을 제작해보도록 할 것입니다.
+          </p>
         </p>
 
         <h2>
@@ -97,7 +122,7 @@
         <h3>
           장점
         </h3>
-        <ul>
+        <ul class="list">
           <li>
             비교적 쉬운 언어인 Python을 기반으로 두기 때문에 익히기 쉽다.
           </li>
@@ -117,7 +142,7 @@
         <h3>
           단점
         </h3>
-        <ol>
+        <ol class="list">
           <li>
             Python을 기반으로 하기 때문에 비교적 쉬운 언어이지만, Python이 객체 지향 프로그램이므로, 객체 지향
             프로그램에 대한 이해도가 필요하다.
